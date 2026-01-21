@@ -21,11 +21,29 @@ data class Item(
     }
 }
 
+abstract class Human(val name: String){
+    abstract var age: Int
+
+    abstract fun hello()
+}
+class Person(name: String, override var age: Int): Human(name){
+    override fun hello() {
+        println("My name is $name")
+    }
+}
+
 fun main(){
+    /*
     val sword = Item(1,"Sword",1)
     val betterSword = sword.copy(quantity = 2)
     println(sword.toString())
     println(betterSword.toString())
     val(id, name, quantity) = betterSword
-    println("Id предмета: $id\nИмя: $name\nКол-во: $quantity")
+    println("Id предмета: $id\nИмя: $name\nКол-во: $quantity")*/
+//    val rinat: Human
+//    val pavel: Human = Human("Pavel")
+    val rinat: Person = Person("Rinat", 18)
+    val maksim: Human = Person("Maksim", 20)
+    rinat.hello()
+    maksim.hello()
 }
