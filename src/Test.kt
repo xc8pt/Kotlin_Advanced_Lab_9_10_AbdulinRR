@@ -26,4 +26,6 @@ fun main(){
     val betterSword = sword.copy(quantity = 2)
     println(sword.toString())
     println(betterSword.toString())
+    val(id, name, quantity) = betterSword
+    println("Id предмета: $id\nИмя: $name\nКол-во: $quantity")
 }
