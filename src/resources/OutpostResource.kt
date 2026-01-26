@@ -1,3 +1,5 @@
+package resources
+
 data class OutpostResourse(
     val id: Int,
     val name: String,

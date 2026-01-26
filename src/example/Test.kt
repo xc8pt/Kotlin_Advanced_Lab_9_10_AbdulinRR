@@ -1,14 +1,16 @@
+package example
+
 var age: Int = 18
     set(value) {
         if ((value > 0) and (value < 110))
             field = value
     }
-//fun main(){
-//    println(age)
-//    age = 45
-//    println(age)
-//    age = -345
-//    println(age)
+//fun characters.characters.example.example.resources.main(){
+//    println(example.age)
+//    example.age = 45
+//    println(example.age)
+//    example.age = -345
+//    println(example.age)
 //}
 
 data class Item(
@@ -34,14 +36,14 @@ class Person(name: String, override var age: Int): Human(name){
 
 fun main(){
     /*
-    val sword = Item(1,"Sword",1)
+    val sword = example.Item(1,"Sword",1)
     val betterSword = sword.copy(quantity = 2)
     println(sword.toString())
     println(betterSword.toString())
     val(id, name, quantity) = betterSword
     println("Id предмета: $id\nИмя: $name\nКол-во: $quantity")*/
-//    val rinat: Human
-//    val pavel: Human = Human("Pavel")
+//    val rinat: example.Human
+//    val pavel: example.Human = example.Human("Pavel")
     val rinat: Person = Person("Rinat", 18)
     val maksim: Human = Person("Maksim", 20)
     rinat.hello()

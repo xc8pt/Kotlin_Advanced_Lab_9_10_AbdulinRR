@@ -1,3 +1,7 @@
+package resources
+import resources.OutpostResourse
+import resources.ResourceManager
+
 class ResourceManager {
     private val resources = mutableListOf<OutpostResourse>()
     fun add(resource: OutpostResourse){
