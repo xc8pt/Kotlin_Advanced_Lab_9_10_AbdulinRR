@@ -1,6 +1,7 @@
 package modules
 
 import resources.OutpostResourse
+import resources.ResourceManager
 
 class EnergyGenerator: OutpostModule("Генератор энергии") {
     override fun performAction(manager: ResourceManager) {
