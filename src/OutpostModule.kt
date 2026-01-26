@@ -1,6 +1,6 @@
 abstract class OutpostModule(
     val name: String,
-    val level: Int = 1
+    var level: Int = 1
 ) {
 
     fun upgrade(){
