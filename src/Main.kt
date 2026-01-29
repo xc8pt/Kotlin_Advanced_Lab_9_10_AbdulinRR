@@ -1,3 +1,4 @@
+import example.GameHero
 import example.GameSession
 import example.InstantMessenger
 import example.Logger
@@ -71,18 +72,34 @@ fun main(){
 //    counter = 1
 //    counter = 5
     //
-    println("Создаём профиль пользователя...")
-    val user = UserProfile("Rinat", "rinatAbd@example.com")
-    println("\nИмя: ${user.name}")
-    println("Email: ${user.email}")
-    println("\nОбращаемся к аватару впервые:")
-    println("Файл аватара: ${user.avatar}")
-    println("\nОбращаемся к аватару снова (должен быть взят из кэша):")
-    println("Файл аватара: ${user.avatar}")
-    println("\nМеняем email:")
-    user.email = "Abdrinat@example.com"
-    println("\nМеняем Name:")
-    user.name = "Rinat A."
+//    println("Создаём профиль пользователя...")
+//    val user = UserProfile("Rinat", "rinatAbd@example.com")
+//    println("\nИмя: ${user.name}")
+//    println("Email: ${user.email}")
+//    println("\nОбращаемся к аватару впервые:")
+//    println("Файл аватара: ${user.avatar}")
+//    println("\nОбращаемся к аватару снова (должен быть взят из кэша):")
+//    println("Файл аватара: ${user.avatar}")
+//    println("\nМеняем email:")
+//    user.email = "Abdrinat@example.com"
+//    println("\nМеняем Name:")
+//    user.name = "Rinat A."
+//
+    println("Создаём героя...")
+    val hero = GameHero("Xc8pt")
 
+    println("\nТекущая мана: ${hero.mana}")
+
+    println("\nГерой пытается использовать способности: ")
+    println("Способность: ${hero.ultimate}")
+
+    println("\nПовторный вызов способности (должна быть мгновенной): ")
+    println("Способность: ${hero.ultimate}")
+
+    println("\nМеняем имя героя:")
+    hero.name = "Aragorn"
+
+    println("\nГерой восстанавливает ману:")
+    hero.mana = 200
 
 }
