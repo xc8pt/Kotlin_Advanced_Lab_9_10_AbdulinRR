@@ -5,7 +5,7 @@ var age: Int = 18
         if ((value > 0) and (value < 110))
             field = value
     }
-//fun characters.characters.example.example.resources.main(){
+//fun characters.characters.example.example.resources.DZ12.main(){
 //    println(example.age)
 //    example.age = 45
 //    println(example.age)
