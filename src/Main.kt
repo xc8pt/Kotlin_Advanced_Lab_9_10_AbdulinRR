@@ -3,6 +3,7 @@ import example.InstantMessenger
 import example.Logger
 import example.PhotoCamera
 import example.SmartPhone
+import example.UserProfile
 import example.counter
 import modules.EnergyGenerator
 import modules.ModuleResult
@@ -61,13 +62,27 @@ fun main(){
 //    println()
 //    manager.printAll()
     //
-    val max = InstantMessenger("max")
-//    val photoCamera = PhotoCamera()
-    val yotaPhone = SmartPhone("YotaPhone", max)
-    yotaPhone.sendTextMessage()
-    yotaPhone.sendVideoMessage()
-//
-    counter = 1
-    counter = 5
+//    val max = InstantMessenger("max")
+////    val photoCamera = PhotoCamera()
+//    val yotaPhone = SmartPhone("YotaPhone", max)
+//    yotaPhone.sendTextMessage()
+//    yotaPhone.sendVideoMessage()
+////
+//    counter = 1
+//    counter = 5
     //
+    println("Создаём профиль пользователя...")
+    val user = UserProfile("Rinat", "rinatAbd@example.com")
+    println("\nИмя: ${user.name}")
+    println("Email: ${user.email}")
+    println("\nОбращаемся к аватару впервые:")
+    println("Файл аватара: ${user.avatar}")
+    println("\nОбращаемся к аватару снова (должен быть взят из кэша):")
+    println("Файл аватара: ${user.avatar}")
+    println("\nМеняем email:")
+    user.email = "Abdrinat@example.com"
+    println("\nМеняем Name:")
+    user.name = "Rinat A."
+
+
 }
